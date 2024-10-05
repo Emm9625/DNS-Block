@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@adguard/hostlist-compiler": "^1.0.29"
+  },
+  "name": "dns-block",
+  "version": "1.0.0",
+  "description": "DNS Compiler",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "hostlist-compiler -c all.json -o out/all.txt"
+  },
+  "author": "",
+  "license": "ISC"
+}
