@@ -8,7 +8,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "hostlist-compiler -c all.json -o out/all.txt"
+    "compile": "hostlist-compiler -c config/all.json -o out/all.txt"
   },
   "author": "",
   "license": "ISC"
