@@ -1,0 +1,11 @@
+@@||log.tailscale.io^
+@@||xp.apple.com^$important
+@@||experiments.apple.com^$important
+@@||api.trycloudflare.com^$important
+@@||trycloudflare.com^$important
+||safebrowsing.google.com^$important
+@@||tracker.coppersurfer.tk^$important
+@@||t.co^$important
+@@||developers.googleblog.com^$important
+||*^$dnstype=AAAA,ctag=device_other
+@@||tail9797e4.ts.net$dnstype=AAAA,ctag=device_other
