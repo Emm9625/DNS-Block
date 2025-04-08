@@ -1,0 +1,578 @@
+{
+    "name": "EMMDNS - All",
+    "description": "List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking",
+    "homepage": "https://github.com",
+    "sources": [
+      {
+        "name": "AdGuard SDNS filter",
+        "source": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AdGuard DNS Popup Hosts filter",
+        "source": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/adguard_popup_filter.txt",
+        "type": "adblock",
+      "transformations": [
+            "Compress",
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "hagezi - Pro",
+        "source": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/pro.txt",
+        "type": "hosts",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AdGuard DNS filter",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+        
+      },
+      {
+        "name": "AdAway Default Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "1Hosts (Lite)",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AdGuard DNS Popup Hosts filter",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "1Hosts (mini)",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_38.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AWAvenue Ads Rule",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Dan Pollock's List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "HaGeZi's Normal Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "HaGeZi's Pro Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_48.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "HaGeZi's Pro++ Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "HaGeZi's Ultimate Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "OISD Blocklist Big",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Peter Lowe's Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Steven Black's List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Phishing URL Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Dandelion Sprout's Anti-Malware List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "HaGeZi's Badware Hoster Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_55.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "NoCoin Filter List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Phishing Army",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Scam Blocklist by DurableNapkin",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "ShadowWhisperer's Malware List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Stalkerware Indicators List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "The Big List of Hacked Malware Web Sites",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "uBlock₀ filters – Badware risks",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Malicious URL Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "WindowsSpyBlocker - Hosts spy rules",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "OISD Blocklist Small",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_5.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "antipaywall_filters_without_element_hiding",
+        "source": "https://raw.githubusercontent.com/yokoffing/filterlists/main/antipaywall_filters_without_element_hiding.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "IOS FILTER",
+        "source": "https://filters.adtidy.org/dns/filter_1_ios.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "MobileFilter-adservers",
+        "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "anudeepND-blacklist",
+        "source": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AdGuard Mobile Filter",
+        "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Adtidy",
+        "source": "https://filters.adtidy.org/dns/filter_1_ios.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "AdAway Default Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
+        "type": "adblock",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Apple",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/hosts/native.apple.txt",
+        "type": "hosts",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Tiktok",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/hosts/native.tiktok.txt",
+        "type": "hosts",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Amazon",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/hosts/native.amazon.txt",
+        "type": "hosts",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "Win/office",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/hosts/native.winoffice.txt",
+        "type": "hosts",
+      "transformations": [
+            "Compress",
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+      {
+        "name": "hagezi - Threat intelligence feed",
+        "source": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/tif.txt",
+        "type": "hosts",
+      "transformations": [
+            "Compress",
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ]
+      },
+    {
+        "name": "Phishing URL Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "Dandelion Sprout's Anti-Malware List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "HaGeZi's Badware Hoster Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_55.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "NoCoin Filter List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "Phishing Army",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "Scam Blocklist by DurableNapkin",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "ShadowWhisperer's Malware List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "Stalkerware Indicators List",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "The Big List of Hacked Malware Web Sites",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "uBlock₀ filters – Badware risks",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "Malicious URL Blocklist",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+    {
+        "name": "WindowsSpyBlocker - Hosts spy rules",
+        "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt",
+        "type": "adblock",
+        "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+        ]
+    },
+      {
+        "name": "Additional rules",
+        "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/refs/heads/gh-pages/Filters/rules.txt",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ],
+        "type": "adblock"
+      },
+      {
+        "name": "Exception rules",
+        "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/refs/heads/gh-pages/Filters/exceptions.txt",
+      "transformations": [
+            "Deduplicate",
+            "Validate",
+            "InsertFinalNewLine"
+      ],
+        "type": "adblock"
+      }
+    ],
+    "transformations": [
+        "Compress",
+        "ValidateAllowIp",
+        "Deduplicate",
+        "InsertFinalNewLine"
+    ],
+    "exclusions_sources": ["https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/refs/heads/master/Filters/exclusions.txt"]
+  }
