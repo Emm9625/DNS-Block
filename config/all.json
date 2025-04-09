@@ -455,17 +455,6 @@
             "InsertFinalNewLine"
       ]
       },
-      {
-        "name": "hagezi - Threat intelligence feed",
-        "source": "https://github.com/hagezi/dns-blocklists/raw/refs/heads/main/hosts/tif.txt",
-        "type": "hosts",
-      "transformations": [
-            "Compress",
-            "Deduplicate",
-            "Validate",
-            "InsertFinalNewLine"
-      ]
-      },
     {
         "name": "Phishing URL Blocklist",
         "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
